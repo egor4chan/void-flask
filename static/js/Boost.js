@@ -77,9 +77,16 @@ function select(pos) {
 }
 
 document.getElementById('buystars').addEventListener('click', () => {
+  var price = 500
+  if (selected_position == 1) { price = 500 }
+  if (selected_position == 2) { price = 1250 }
+  if (selected_position == 3) { price = 2500 }
+  if (selected_position == 4) { price = 5000 }
+  if (selected_position == 5) { price = 12500 }
+  if (selected_position == 6) { price = 50000 }
   try {
     const httpRequest = new XMLHttpRequest();
-    httpRequest.open('GET', 'https://egor4chan-void-flask-9155.twc1.net/generate-invoice', true);
+    httpRequest.open('GET', `https://egor4chan-void-flask-9155.twc1.net/generate-invoice${price}`, true);
 
     httpRequest.onprogress = function () {
       if (httpRequest.status >= 200 && httpRequest.status < 300) {

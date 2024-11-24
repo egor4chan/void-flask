@@ -20,12 +20,12 @@ def page():
 def game():
     return render_template('index.html')
 
-def generate_invoice():
+def generate_invoice(price):
     title = "Boost"
     description = "Instant boost for you."
     payload = "{}"
     currency = "XTR"  # Telegram Stars
-    prices = [{'label': 'Boost', 'amount': 1}]
+    prices = [{'label': 'Boost', 'amount': int(price)}]
 
     params = {
         'title': title,
@@ -44,9 +44,9 @@ def generate_invoice():
     else:
         return {'error': 'Failed to create invoice'}
 
-@app.route('/generate-invoice', methods=['GET'])
-def generate_invoice_route():
-    invoice_data = generate_invoice()
+@app.route('/generate-invoice<price>', methods=['GET'])
+def generate_invoice_route(price):
+    invoice_data = generate_invoice(price)
 
     return invoice_data
 
