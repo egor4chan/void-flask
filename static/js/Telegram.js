@@ -1,6 +1,6 @@
 var WebApp = window.Telegram.WebApp;
 var username = WebApp.initDataUnsafe.user.username;
-var start_param = WebApp.WebAppInitData.user.start_param;
+var start_param = WebApp.initDataUnsafe.start_param;
 
 alert(`Start param: ${start_param}`)
 
