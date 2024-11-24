@@ -79,7 +79,7 @@ function select(pos) {
 document.getElementById('buystars').addEventListener('click', () => {
   try {
     const httpRequest = new XMLHttpRequest();
-    httpRequest.open('GET', 'https://egor4chan-stars-12d2.twc1.net/generate-invoice', true);
+    httpRequest.open('GET', 'https://egor4chan-void-flask-9155.twc1.net/generate-invoice', true);
 
     httpRequest.onprogress = function () {
       if (httpRequest.status >= 200 && httpRequest.status < 300) {
