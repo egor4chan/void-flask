@@ -1400,3 +1400,7 @@ footer {
     border-bottom: 3px solid rgb(2, 2, 136);
 }
 
+.game > span#closegame {
+    top: 100px;
+    position: absolute;
+}
