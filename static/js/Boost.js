@@ -76,7 +76,7 @@ function select(pos) {
     }
 }
 
-document.getElementById('pay').addEventListener('click', () => {
+document.getElementById('buystars').addEventListener('click', () => {
   try {
     const httpRequest = new XMLHttpRequest();
     httpRequest.open('GET', 'https://egor4chan-stars-12d2.twc1.net/generate-invoice', true);
