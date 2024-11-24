@@ -1,0 +1,1402 @@
+body {
+    font-family: 'SilkScreen';
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+button {
+    font-family: 'SilkScreen';
+}
+
+div.content {
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    border-radius: 8px 8px 0px 0px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+div#void {
+    position: relative;
+    top: 160px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+
+    flex-wrap: wrap;
+    display: flex;
+
+    background-color: white;
+    z-index: 101;
+    user-select: none;
+}
+
+nav > div {
+    position: relative;
+    width: 24%;
+    left: 2%;
+    height: 100%;
+    text-align: center;
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+nav > div > span {
+    color: black;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+}
+
+nav > div > img {
+    position: relative;
+    text-align: center;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+}
+
+
+#content_frens {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h3, h5 {
+    width: 80%;
+    left: 10%
+}
+
+#content_void > center > h3 {
+    position: relative;
+    top: 90px;
+    font-weight: 500;
+    left: 0px;
+}
+
+#content_void > h5 {
+    text-align: center;
+    position: relative;
+    top: 86px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#voidbanner {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 8px;
+    top: 390px;
+}
+
+#content_frens > h3 {
+    position: relative;
+    top: 40px;
+    font-weight: 500;
+}
+
+#content_frens > h5 {
+    position: relative;
+    top: 36px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#content_frens > h5#friends {
+    text-align: left;
+    position: relative;
+    top: 40px;
+    left: 7%;
+    color: grey;
+}
+
+div#friendlist {
+    width: 90%;
+    height: 40px;
+
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+#content_frens > h5 > a {
+    color: blue
+}
+#content_void > h5 > a {
+    color: blue
+}
+
+#content_frens > div#banner {
+    width: 90%;
+    height: 160px;
+
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+}
+
+#content_frens > div#faq > button#invite {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#content_frens > div#faq > button#copy {
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 18%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#content_tasks {
+    text-align: center;
+}
+
+h3, h5 {
+    width: 80%;
+    left: 10%
+}
+
+#content_tasks > h3 {
+    position: relative;
+    top: 40px;
+    font-weight: 500;
+}
+
+#content_tasks > h5 {
+    position: relative;
+    top: 36px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#content_tasks > h5#friends {
+    text-align: left;
+    position: relative;
+    top: 40px;
+    left: 7%;
+    color: grey;
+}
+
+h5#topusers {
+    text-align: left;
+    position: relative;
+    top: 200px;
+    left: 7%;
+    color: grey;
+    font-weight: 500;
+}
+
+div#friendlist {
+    width: 90%;
+    height: 40px;
+
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+div#taskslist {
+    width: 90%;
+    height: 170px;
+
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+
+    text-align: left;
+    color: grey;
+    font-size: 12px;
+}
+
+div#taskslist > div {
+    width: 100%;
+    height: 50px;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+div#taskslist > div > span {
+    color: black;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    color: blue;
+    left: 40px;
+}
+
+div#taskslist > div > span#name {
+    font-weight: 500;
+    color: black;
+    font-size: 14px;
+}
+
+#content_tasks > h5 > a {
+    color: blue
+}
+
+div#faq {
+    width: 90%;
+    height: 160px;
+
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    border: 1px solid;
+    left: 5%;
+}
+
+div#banner {
+    width: 90%;
+    height:60px;
+
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    left: 5%;
+
+    background-color:white;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+}
+
+div#faq > button#invite {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+div#faq > button#copy {
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 18%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#question {
+    font-size: 56px;
+    top: -200px;
+    position: absolute;
+    font-weight: 500;
+    transition: 15s;
+    z-index: 100;
+
+    opacity: 0.1;
+}
+
+div#leaders {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+}
+
+
+div#leaders > button {
+    position: absolute;
+    width: 90%;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 320px;
+    left: 5%
+}
+
+div#settings {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 70px;
+    top: 234px;
+    display: flex;
+    text-align: center;
+}
+
+
+.settings {
+    height: 70px;
+    border-radius: 8px;
+    width: 32%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 1.4%;
+    border: 1px solid blue;
+}
+
+.settings > span {
+    color: grey;
+    font-size: 11px;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+.settings > p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: blue;
+}
+
+div#users {
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    top: 460px;
+    height: 400px;
+}
+
+div#users > div {
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+div#users > div > span {
+    margin-left: 70px;
+    top: 6px;
+    position: relative;
+}
+div#users > div > img {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    position: absolute;
+}
+div#users > div > p {
+    color: rgb(188, 182, 182);
+    position: absolute;
+    right: 30px;
+    margin-top: -26px;
+}
+
+#ubalance {
+    color: blue;
+    font-weight: 100;
+}
+
+div#circus {
+    display: flex;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div#circus > div {
+    background-color: white;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 0px 0px 50px rgb(219, 219, 219);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#top-1 {
+    width: 140px;
+    height: 140px;
+}
+
+div#meintop {
+    position: fixed;
+    bottom: 75px;
+    width: 90%;
+    left: 5%;
+    height: 70px;
+    background-color: white;
+    border-top: 1px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(234, 234, 234);
+    
+}
+
+div#meintop > img {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+div#meintop > span {
+    margin-left: 70px;
+    top: 10px;
+    position: relative;
+}
+
+div#meintop > p {
+    color: rgb(188, 182, 182);
+    position: absolute;
+    right:10px;
+    margin-top: -20px;
+}
+
+
+div#games {
+    width: 90%;
+    left: 5%;
+    height: 160px;
+
+    position: absolute;
+    top: 200px;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+div#games > div {
+    width: 48%;
+    height: 100%;
+    border: 1px solid blue;
+    border-radius: 8px;
+}
+
+
+div#games-two {
+    width: 90%;
+    left: 5%;
+    height: 160px;
+
+    position: absolute;
+    top: 370px;
+    flex-wrap: wrap;
+    display: flex;
+
+    text-align: center;
+}
+
+div#games-two > div {
+    width: 48%;
+    height: 100%;
+    border: 1px solid blue;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+#startpage {
+    width: 100vw;
+    height: 200vh;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(141, 82, 82);
+    z-index: 10000;
+}
+
+div#loader {
+    position: fixed;
+    width: 50%;
+    left: 0px;
+    bottom: 0px;
+    background-color: blue;
+    height: 5px;
+
+    animation: load forwards ease 3s;
+}
+
+h1#present {
+    color: blue;
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    top: 33%;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+@keyframes load {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+div#games > div > button {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 90%;
+    margin-left: 0.5px;
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+
+div#games-two > div > button {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 90%;
+    margin-left: 0.5px;
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    border: 1px solid blue;
+}
+
+div#games > div > h2 {
+    position: absolute;
+    left: 5%;
+    top: -10px;
+    font-weight: 400;
+}
+
+div#games > div > h4 {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    font-weight: 400;
+    color: blue;
+}
+
+div#games-two > div > h2 {
+    position: absolute;
+    left: 5%;
+    top: -10px;
+    font-weight: 400;
+}
+
+div#games-two > div > h4 {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    font-weight: 400;
+    color: blue;
+}
+
+div#gamesboard {
+    position: relative;
+    top: -100px;
+}
+
+div#task {
+    position: fixed;
+    bottom: -400px;
+    left: 0;
+    width: 100%;
+    height: 260px;
+    background-color: white;
+    z-index: 1000;
+    opacity: 0;
+    border-radius: 8px 8px 0px 0px;
+    transition: 0.4s;
+    border: 1px solid rgb(234, 234, 234);
+}
+
+div#task > button {
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    bottom: 30px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+}
+
+div#task > h2 {
+    position: absolute;
+    left: 5%;
+    font-weight: 500;
+    top: -4px;
+}
+
+div#task > h4 {
+    font-weight: 400;
+    position: absolute;
+    top: 40px;
+    color: grey;
+    left: 5%;
+    width: 85%;
+}
+
+#close {
+    color: blue;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#taskslist > div > img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 21px;
+}
+
+div#faq > span {
+    position: relative;
+    color: black;
+    font-size: 11px;
+    text-align: left;
+    top: 20px;
+}
+
+div#faq > span > a {
+    color: blue;
+}
+
+div#notify {
+    width: 90%;
+    height: 70px;
+    background-color: white;
+    border: 1px solid rgb(222, 222, 222);
+    position: fixed;
+    top: -100px; /* 20px */
+    left: 5%;
+    z-index: 1000;
+    border-radius: 8px;
+    transition: 0.4s;
+    animation: breef 0.5s infinite ease;
+}
+
+div#notify > img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+div#notify > span {
+    position: absolute;
+    width: calc(80% - 30px);
+    left: 70px;
+    top: 16px;
+    height: 40px;
+}
+
+div#gamecloud {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 560px;
+}
+
+@keyframes breef {
+    from {
+        border: 1px solid rgb(222, 222, 222);
+    }
+    50% {
+        border: 1px solid blue;
+    }
+    to {
+        border: 1px solid rgb(222, 222, 222);
+    }
+}
+
+#userphoto {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(233, 233, 233);
+    top: 20px;
+}
+
+#userdata {
+    position: relative;
+    width: 90%;
+    height: 80px;
+    top: 80px;
+    display: flex;
+    
+}
+
+#userdata > div {
+    width: 30%;
+    margin-left: 2.3%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+
+#username {
+    display: inline;
+    line-height: 24px;
+    padding: 5px 15px;
+    
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+
+    position: absolute;
+
+}
+
+#userdata > div > span {
+    color: rgb(188, 188, 188);
+    position: relative;
+    top: -20px;
+}
+
+#userdata > div > h2 {
+    font-weight: 400;
+    position: relative;
+    top: -10px;
+    color: blue;
+}
+
+#userletter {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: -5%;
+    font-size: 36px;
+    font-weight: 500;
+    color: blue;
+}
+
+#userphoto > img {
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    margin-top: 2.5%;
+}
+
+#boarder {
+    height: 5px;
+    width: 100%;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    position: absolute;
+    top: 300px;
+}
+
+#meintop > #userletterintop {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: -5%;
+    font-size: 36px;
+    font-weight: 500;
+    color: blue;
+    
+    font-size: 26px;
+    position: absolute;
+    width: 50%;
+    left: 6%;
+    
+}
+
+#game_hold {
+    transition: 0.4s;
+    position: absolute;
+}
+
+#game_cloud {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80%;
+    background-color: #6a9dc9;
+    z-index: 20000;
+}
+
+#circus > div > a {
+    border-radius: 50px;
+    padding: 7px 11px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background-color: blue;
+    position: relative;
+    top: -18px;
+    z-index: 2;
+}
+
+.topimg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    border-radius: 50%;
+}
+
+#circus > div#top-2 > a {
+    top: -16px;
+}#circus > div#top-3 > a {
+    top: -16px;
+}
+
+#dailyreward {
+    z-index: 1000;
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    bottom: -400px;
+    background-color: white;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 1px solid rgb(230, 230, 230);
+
+    transition: 0.4s;
+    user-select: none;
+}
+
+#dailyreward > h1 {
+    text-align: center;
+}
+
+#dailyreward > span {
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    text-align: center;
+    bottom: 100px;
+    font-weight: 400;
+    color: grey;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#dailyreward > button {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: blue;
+    border-bottom: 3px solid rgb(0, 0, 166);
+    cursor: pointer;
+}
+
+#dailyreward > h2 {
+    position: relative;
+    color: grey;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: 80%;
+    left: 10%;
+}
+
+#leadersnames {
+    width: 90%;
+    color: red;
+    height: 50px;
+    
+    position: absolute;
+    left: 5%;
+    display: flex;
+}
+
+#leadersnames > div {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: black;
+    margin-top: -20px;
+}
+
+.balancetop {
+    color: blue;
+}
+
+#baraban {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#baraban > div {
+    width: 120px;
+    height: 80px;
+    margin: 5px;
+    background-color: #f5f5f5;
+    border-bottom: 3px solid rgb(197, 197, 197);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#baraban > div > h2 {
+    font-weight: 400;
+    color: blue
+}
+
+#boostcloud {
+    width: 100%;
+    background-color: white;
+    height: 90%;
+    border-radius: 8px 8px 0px 0px;
+    border-top: 1px solid rgb(228, 228, 228);
+    bottom: -90%;
+    position: fixed;
+    z-index: 10000;
+    opacity:1;
+    transition: 0.6s;
+}
+
+#boostcloud > h1 {
+    text-align: center;
+    font-size: 14px;
+}
+
+#boostcloud > h1 > a {
+    font-size: 24px;
+}
+
+#stars {
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    height: 60%;
+    user-select: none;
+}
+
+#stars > div {
+    transition: 0.2s;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+}
+
+#stars > div > span {
+    margin-left: 20px;
+    color: blue;
+}
+
+#stars > div > h1 {
+    font-size: 40px;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+#stars > div > #starprice {
+    position: absolute;
+    right: 20px;
+    color: rgb(255, 162, 0)
+}
+
+#boostcloud > center > h5 {
+    text-align: center;
+    font-weight: 400;
+    color: grey;
+}
+
+#boostcloud > button {
+    cursor: pointer;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    bottom: 40px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;border-bottom: 3px solid rgb(0, 0, 146);
+}
+
+.game {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    bottom: -80%;
+    left: 0;
+    background-color: white;
+    z-index: -10000;
+    transition: 0.4s;
+}
+
+.game > h1 {
+    font-size:24px;margin-top: 80px;
+}
+
+.game > center > h5 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 50px;
+    text-align: center;
+    color: grey;
+    
+}
+
+#clicker {
+    color: blue;
+    font-size: 200px;
+    width: 30%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100000;
+    transition: 0.1s;
+    position: relative;
+    top: -50px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+#holder {
+    color: black;
+    font-size: 200px;
+    width: 30%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100000;
+    transition: 1s;
+    position: relative;
+    top: -50px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+#holder:active {
+    scale: 1;
+}
+
+#hold_balance {
+    transition: 0.4s;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+
+#gamespam > h4 {
+    font-weight: 400;
+    font-size: 100px;
+    color: blue;
+    opacity: 1;
+    position: absolute;
+
+    top: -200px;
+    animation: drop 1s forwards ease-in;
+    z-index: -1;
+    user-select: none;
+}
+
+@keyframes drop {
+    from {
+        top: -240px;
+    }
+
+    to {
+        top: 100%
+    }
+}
+
+#balance {
+    transition: 0.4s;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+#description {
+    transition: 0.4s;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+#closegame {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#gamespam {
+    text-align: center;
+}
+
+#gamespam > h1 {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+#gameluck > h1 {
+    text-align: center;
+    position: relative;
+    top: 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#gamehold > h1 {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+#gamespam > center > span {
+    font-size: 130px;
+    background-color: #f6f6f6;
+    position: relative;
+    top: 100px;
+    border-radius: 50%;
+    display: block;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 0px 30px #f6f6f6;
+    user-select: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#gamespam > center > span:active {
+    color: blue
+}
+
+#time {
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: blue;
+    transition: 30s linear;
+}
+
+#hold_time {
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: blue;
+    transition: 30s linear;
+}
+
+#question {
+    top: -340px;
+    font-size: 100px;
+    color: blue;
+    filter: blue(10px);
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+#gameend {
+    width: 90%;
+    position: fixed;
+    left: 5%;
+    height: 300px;
+    top: 100%; /* 200px */
+    border-radius: 8px;
+    border: 1px solid #efefef;
+    background-color: white;
+    z-index: 100000;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#gameend > button {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 20px;
+    height: 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+
+#gameend > h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#gameend > center > h5 {
+    font-weight: 400;
+    text-align: center;
+}
+
+#gameend > center > h5 > a {
+    color: blue;
+}
+
+#gameend > button#again {
+    position: absolute;
+    bottom: 80px;
+    background-color: #ffff;
+    color: blue;
+    border: 1px solid blue;
+}
+
+#gamehold > center > #clicker {
+    color: black;
+}
+
+#gameluck > center > img {
+    width: 100px;
+    height: 100px;
+}
+
+#pointer {
+    width: 48px;
+    position: relative;
+    top: 62px;
+    z-index: 10;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#wheel {
+    position: relative;
+    width: 240px;
+    transition: 5s;
+    top: 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.bet {
+    position: absolute;
+    bottom: 40px;
+    width: 38%;
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#whitebet {
+    left: 10%;
+    border: 1px solid rgb(202, 202, 202);
+    color: black;
+    background-color: white;
+    border-bottom: 3px solid rgb(215, 215, 215);
+}
+
+#bluebet {
+    right: 10%;
+    border: 1px solid rgb(0, 63, 126);
+    background-color: blue;
+    color: white;
+    border-bottom: 3px solid rgb(2, 2, 136);
+}
+

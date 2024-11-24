@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/js/Location.js"></script>
+    <script src="static/js/Basic.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>void</title>
+    
+</head>
+<body>
+    <div id="gamecloud">
+        
+    </div>
+    <div id="notify">
+        <img src="static/IMG_1016.PNG" alt="">
+        <span id="message">game is not aviable now. wait new realise.</span>
+    </div>
+    <div class="content" id="content_void" style="opacity: 1; z-index: 10;">
+        <center>
+        <div id="userphoto">
+            <h2 id="userletter">u</h2>
+            <!-- <img id='userphotourl' alt=""> -->
+        </div>
+       
+            <h3 id="username" style="top: 50px">undefinded</h3>
+       
+        <div id="userdata">
+            <div style="scale: 0.95;">
+                <h2>34.4K</h2>
+                <span>rank</span>
+            </div>
+            <div style="scale: 1.05;">
+                <h2>0?</h2>
+                <span style="color: rgb(81, 81, 81);">balance</span>
+            </div>
+            <div style="scale: 0.95;">
+                <h2>0</h2>
+                <span>frens</span>
+            </div>
+        </div>
+
+        <div id="boarder"></div>
+
+        </center>
+
+        <center><h3 style="margin-top: 40px;">play and earn</h3></center>
+        <h5>play this games every day and get daily rewards. <a>sorry?</a></h5>
+
+        <div id="gamesboard">
+        <div id="games">
+            <div id="hold" onclick="open_game_hold()">
+                <h2>hold</h2>
+                <h4>+1,000 ?</h4>
+                <button id="hold_play">play</button>
+            </div>
+            <div style="position:absolute;right: 0px;" onclick="open_game_cloud()">
+                <h2>spam</h2>
+                <h4>+2,000 ?</h4>
+                <button>play</button>
+            </div>
+        </div>
+        <div id="games-two">
+            <div onclick="open_game_luck()">
+                <h2>luck</h2>
+                <h4>+1,000 ?</h4>
+                <button onclick="send_notify('Game is not aviable now. wait the new path.')">soon</button>
+            </div>
+            <div style="position:absolute;right: 0px;">
+                <h2>secret</h2>
+                <h4>+???,???</h4>
+                <button onclick="send_notify('Game is not aviable now. wait the new path.')">soon</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div onclick="locate(1)" id="page_1" style="opacity: 1;">
+            <img src="static/IMG_1009.PNG"><br>
+            <span style="color: black">void</span>
+        </div>
+        <div onclick="locate(2)" id="page_2">
+            <img src="static/IMG_1005.PNG"><br>
+            <span id="span_2">tasks</span>
+        </div>
+        <div onclick="locate(3)" id="page_3">
+            <img src="static/IMG_1006.PNG"><br>
+            <span>frens</span>
+        </div>
+        <div onclick="locate(4)" id="page_4">
+            <img src="static/IMG_1007.PNG"><br>
+            <span>top</span>
+        </div>
+    </nav>
+
+    <!--  tasks   -->
+      <div class="content" id="content_tasks" style="opacity: 0; z-index: -100;">
+      <h3>earn ?</h3>
+        <h5>complete daily and one-time tasks and earn points. <a>i need more?</a></h5>
+        <div id="banner">
+            earn more with ???
+        </div>
+        <h5 id="friends">daily tasks</h5>
+        <div id="taskslist">
+            <div onclick="open_task(1)">
+                <img src="static/IMG_1012.PNG" alt="">
+                <span id="name">ton transaction</span><br>
+                <span>+10,000 ?</span>
+            </div>
+            <div onclick="open_task(2)">
+                <img src="static/IMG_1011.PNG" alt="">
+                <span id="name">stars purshare</span><br>
+                <span>+5,000 ?</span>
+            </div>
+            <div onclick="open_task(3)">
+                <img src="static/IMG_1013.PNG" alt="">
+                <span id="name">view video</span><br>
+                <span>+1,000 ?</span>
+            </div>
+        </div>
+
+        <h5 id="friends">one-time tasks</h5>
+        <div id="taskslist" style="height: 226px;">
+            <div onclick="open_task(4)">
+                <img src="static/IMG_1014.PNG" alt="">
+                <span id="name">subscribe us</span><br>
+                <span>+3,000 ?</span>
+            </div>
+            <div onclick="open_task(5)">
+                <img src="static/IMG_1014.PNG" alt="">
+                <span id="name">subscribe partners</span><br>
+                <span>+3,000 ?</span>
+            </div>
+            <div onclick="open_task(6)">
+                <img src="static/IMG_1015.PNG" alt="">
+                <span id="name">boost channel</span><br>
+                <span>+1,000 ?</span>
+            </div>
+            <div onclick="open_task(7)">
+                <img src="static/IMG_1016.PNG" alt="">
+                <span id="name">???</span><br>
+                <span>+100,000 ?</span>
+            </div>
+        </div>
+        <footer></footer>
+
+        </div>
+
+    <!--  frens   -->
+      <div class="content" id="content_frens" style="opacity: 0; z-index: -100;">
+        <h3>invite friends</h3>
+        <h5>You and your friend will receive bonuses for invitation. <a>what?</a></h5>
+        <div id="faq">
+            <span>you will <a>receive 20%</a> of your friends earnings. also you will receive <a>one-time 1,000 ?</a></span>
+            <button id="invite">Invite</button>
+            <button id="copy">+</button>
+        </div>
+        <h5 id="friends">friends</h5>
+        <div id="friendlist">
+            you don't have friends yet
+        </div>
+      </div>
+
+
+    <!--  top   -->
+      <div class="content" id="content_top" style="opacity: 0; z-index: -100;">
+        <div id="circus">
+            <div id="top-2" style="margin-right: 10px; margin-top: 16px;">
+                <img src="static/trump.jpg" alt="" class="topimg">
+                <a>2</a>
+            </div>
+            <div id="top-1" style="width: 120px;height: 120px;">
+                <img src="static/roxman.jpg" alt="" class="topimg">
+                <a>1</a>
+            </div>
+            <div id="top-3" style="margin-left: 10px; margin-top: 16px;">
+                <img src="static/ywgwk.jpg" alt="" class="topimg">
+                <a>3</a>
+            </div>
+
+        </div>
+        <div id="leadersnames">
+            <div>
+                <span>trump</span><br>
+                <span class="balancetop">50.3M ?</span>
+            </div>
+            <div>
+                <span>roxman</span>
+                <br>
+                <span class="balancetop">93.9M ?</span>
+            </div>
+            <div>
+                <span>ywgwk</span><br>
+                <span class="balancetop">73.2M ?</span>
+            </div>
+        </div>
+        <div id="leaders">
+            <div id="settings">
+            <div id="yourbalance" class="settings">
+                <span>Your balance</span>
+                <p>0?</p>
+            </div>
+            <div id="yourrating" class="settings">
+                <span>Your rating</span>
+                <p>#33.4K</p>
+            </div>
+            <div id="freerating" class="settings">
+                <span>Update rating</span>
+                <p>FREE >></p>
+            </div>
+            </div>
+
+            <button id="upgrade" onclick="boost()">+ boost your rank</button>
+            <h5 id="topusers">top users</h5>
+
+            <div id="users">
+                <div>
+                    <img src="static/user.webp">
+                    <span>metasilence</span><br>
+                    <span id="ubalance">43.8M ?</span>
+                    <p>4</p>
+                </div>
+                <div>
+                    <img src="static/user.webp">
+                    <span>winkobet</span><br>
+                    <span id="ubalance">30.1M ?</span>
+                    <p>5</p>
+                </div>
+                <div>
+                    <img src="static/user.webp">
+                    <span>cryptomax</span><br>
+                    <span id="ubalance">10.6M ?</span>
+                    <p>6</p>
+                </div>
+                <div>
+                    <img src="static/user.webp">
+                    <span>elonmusk</span><br>
+                    <span id="ubalance">3.8M ?</span>
+                    <p>7</p>
+                </div>
+                <div>
+                    <img src="static/user.webp">
+                    <span>mvpshkin</span><br>
+                    <span id="ubalance">2.1M ?</span>
+                    <p>8</p>
+                </div>
+                <div>
+                    <img src="static/user.webp">
+                    <span>durov</span><br>
+                    <span id="ubalance">2.0M ?</span>
+                    <p>9</p>
+                </div>
+                <div>
+                    <img src="static/user.webp">
+                    <span>realmefer</span><br>
+                    <span id="ubalance">1.6M ?</span>
+                    <p>10</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="meintop">
+            
+            <h2 id="userletterintop">u</h2>
+                    <span>you</span><br>
+                    <span id="ubalance">0 ?</span>
+                    <p>33.4K</p>
+        </div>
+        <footer></footer>
+      </div>
+
+    <div id="task">
+        <a id="close" onclick="close_task()">x</a>
+        <h2 id="taskName">ton transaction</h2>
+        <h4 id="taskAbout">connect wallet and make simple ton transaction into our wallet.</h4>
+        <button id="taskButton" onclick="send_notify('???')">connect wallet</button>
+    </div>
+
+    <div id="game_hold"  style="opacity: 0; z-index: -100;">
+        <div id="game_cloud">d</div>
+    </div>
+
+
+    <div id="dailyreward">
+        <h1>daily rewards!</h1>
+        <h2>play void every day and claim daily rewards. for claiming you need to subscribe us.</h2>
+        <div id="baraban">
+            <div>
+                <h2 style="color: grey;">0?</h2>
+            </div>
+            <div style="border-bottom: 3px solid blue; scale: 1.1">
+                <h2>100?</h2>
+            </div>
+            <div>
+                <h2 style="color: grey;">500?</h2>
+            </div>
+        </div>
+
+        <span onclick="remove_dr()">maybe, later...</span>
+        <button id="dailybutton" onclick="go_to_channel()">subscribe for claim</button>
+    </div>
+
+    <div id="boostcloud">
+        <a id="close" onclick="close_boost()">x</a>
+        <h1><a>boost</a> <br> your rank</h1>
+        <center><h5>buy points? for stars and get higher rank instant.</h5></center>
+        
+        <div id="stars">
+            <div style="border: 1px solid blue;" onclick="select(1)" id="s1">
+                <h1>?</h1>
+                <span>+10,000 ?</span>
+                <span id="starprice">500 ⭐</span>
+            </div>
+            <div onclick="select(2)" id="s2">
+                <h1>?</h1>
+                <span>+25,000 ?</span>
+                <span id="starprice">1250 ⭐</span>
+            </div>
+            <div onclick="select(3)" id="s3">
+                <h1>?</h1>
+                <span>+50,000 ?</span>
+                <span id="starprice">2500 ⭐</span>
+            </div>
+            <div onclick="select(4)" id="s4">
+                <h1>?</h1>
+                <span>+100,000 ?</span>
+                <span id="starprice">5000 ⭐</span>
+            </div>
+            <div onclick="select(5)" id="s5">
+                <h1>?</h1>
+                <span>+250,000 ?</span>
+                <span id="starprice">12500 ⭐</span>
+            </div>
+            <div onclick="select(6)" id="s6">
+                <h1>?</h1>
+                <span>+1,000,000 ?</span>
+                <span id="starprice">50000 ⭐</span>
+            </div>
+            
+        </div>
+
+        <button id="buystars">buy for stars</button>
+    </div>
+
+    <div id="gamespam" class="game">
+        <span id="closegame" onclick="close_game_cloud()"><< BACK</span>
+        <h1 id="balance">spam</h1><center>
+        <h5 id="description">click on ? and earn points. for begining - just click.</h5>
+        <h1 id="clicker">?</h1></center>
+        <div id="time"></div>
+    </div>
+
+    <div id="gamehold" class="game">
+        <span id="closegame" onclick="close_game_hold()"><< BACK</span>
+        <h1 id="hold_balance">hold</h1><center>
+        <h5 id="hold_description">hold ? as it possible and earn points. for beginning - start holding.</h5>
+        <h1 id="holder">?</h1></center>
+        <div id="hold_time"></div>
+    </div>
+
+    <div id="gameluck" class="game">
+        <span id="closegame" onclick="close_game_luck()"><< BACK</span>
+        <h1 id="luck_balance">luck</h1><center>
+        <h5 id="luck_description">just use your luck</h5>
+
+        <center>
+        <img src="static/pointer.PNG" id="pointer"><br>
+        <img src="static/roulette.PNG" id="wheel">
+
+        <button id="whitebet" class="bet" onclick="create_game('white')">white</button>
+        <button id="bluebet" class="bet" onclick="create_game('blue')">blue</button>
+        </center>
+
+        
+    </div>
+
+    <div id="gameend">
+        <h1>good game?</h1>
+        <center>
+        <h5>you earn <a id="summaryearn">1029</a>? in this game. wait some time and play again, or <a>buy game and play right now!</a> for stars.</h5>
+        </center>
+        <button id="again">play again</button>
+        <button onclick="close_game_cloud()" id="claimbtn">claim</button>
+    </div>
+
+    <script src="static/js/app.js"></script>
+    <script src="static/js/Stars.js"></script>
+    <script src="static/js/Luck.js"></script>
+    <script src="static/js/Hold.js"></script>
+    <script src="static/js/Boost.js"></script>
+    <script src="static/js/Telegram.js"></script>
+    <script src="static/js/Game.js"></script>
+    <script src="static/js/Background.js"></script>
+    <script src="static/js/Notification.js"></script>
+    <script src="static/js/Tasks.js"></script>
+    <script src="static/js/Location.js"></script>
+    <script src="static/js/Basic.js"></script>
+</body>
+</html>
