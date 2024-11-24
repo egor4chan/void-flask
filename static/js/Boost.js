@@ -98,9 +98,9 @@ document.getElementById('buystars').addEventListener('click', () => {
             if (status === 'paid') {
               alert('Payment successful!');
             } else if (status === 'cancelled') {
-              alert(`Payment cancelled: ${status}`);
+              console.log('payment cancelled')
             } else {
-              alert('Payment failed or not completed.');
+              console.log('payment cancelled or else')
             }
           });
         } else {

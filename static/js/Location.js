@@ -11,7 +11,7 @@ check_location()
 
 function check_location() {
     if (LocationNow == 1) {
-        document.getElementById('content_void').style.top = '10vh'
+        document.getElementById('content_void').style.top = '16vh'
         document.getElementById('content_void').style.zIndex = '100';
         document.getElementById('content_void').style.opacity = '1';
 
@@ -25,17 +25,14 @@ function check_location() {
         document.getElementById('content_top').style.zIndex = '-100'
         document.getElementById('content_top').style.opacity = '0'
 
-        document.body.style.backgroundColor = 'rgb(247, 247, 247)'
+        //document.body.style.backgroundColor = 'rgb(247, 247, 247)'
         window.scrollTo(0, 0);
         document.body.style.overflowY = 'scroll';
         document.getElementById('content_void').style.height = '1000px'
 
-        WebApp.headerColor = '#f7f7f7'
-        WebApp.backgroundColor = '#f7f7f7';
-        WebApp.bottomBarColor = '#f7f7f7'
     }
     if (LocationNow == 2) {
-        document.getElementById('content_tasks').style.top = '10vh'
+        document.getElementById('content_tasks').style.top = '16vh'
         document.getElementById('content_tasks').style.zIndex = '100';
         document.getElementById('content_tasks').style.opacity = '1';
 
@@ -57,7 +54,7 @@ function check_location() {
         WebApp.bottomBarColor = '#ffffff'
     }
     if (LocationNow == 3) {
-        document.getElementById('content_frens').style.top = '10vh'
+        document.getElementById('content_frens').style.top = '16vh'
         document.getElementById('content_frens').style.zIndex = '100';
         document.getElementById('content_frens').style.opacity = '1';
 
@@ -80,7 +77,7 @@ function check_location() {
         WebApp.bottomBarColor = '#ffffff'
     }
     if (LocationNow == 4) {
-        document.getElementById('content_top').style.top = '10vh'
+        document.getElementById('content_top').style.top = '16vh'
         document.getElementById('content_top').style.zIndex = '100';
         document.getElementById('content_top').style.opacity = '1';
 

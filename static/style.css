@@ -2,7 +2,7 @@ body {
     font-family: 'SilkScreen';
     margin: 0;
     padding: 0;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -17,7 +17,7 @@ div.content {
     width: 100vw;
     height: 90vh;
     position: absolute;
-    top: 10vh;
+    top: 20vh;
     border-radius: 8px 8px 0px 0px;
     background-color: white;
     transition: 0.5s;
@@ -1021,7 +1021,7 @@ footer {
 #boostcloud {
     width: 100%;
     background-color: white;
-    height: 90%;
+    height: 80%;
     border-radius: 8px 8px 0px 0px;
     border-top: 1px solid rgb(228, 228, 228);
     bottom: -90%;
