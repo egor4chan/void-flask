@@ -69,7 +69,7 @@ def auth_user():
 
     data.Auth(user_id, refer_id)
     
-
+    return 'True'
 # ДОДЕЛАТЬ РЕГИСТРАЦИЮ.
 
 
