@@ -67,8 +67,3 @@ class Data:
             rows = cursor.fetchall()
             return len(rows)
             
-
-
-data = Data()
-data.PrintAllData()
-print( data.GetReferrals(1) )
