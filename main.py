@@ -1,8 +1,10 @@
 from flask import Flask, render_template, jsonify, request
 from telegram import Bot
 import requests
+import server
 
 app = Flask(__name__)
+data = server.Data()
 
 TELEGRAM_TOKEN = "8055937809:AAFPj39LWDxhz-tYAb0fEijg6OHDy0Db5Wc"
 API_URL = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/'
@@ -11,7 +13,6 @@ bot = Bot(token=TELEGRAM_TOKEN)
 
 paid_users = {}
 
-
 @app.route('/')
 def page():
     return render_template('start.html')
@@ -19,6 +20,15 @@ def page():
 @app.route('/game')
 def game():
     return render_template('index.html')
+
+@app.route('/admin')
+def admin():
+    return render_template('adminpanel.html')
+
+@app.route('/data.db')
+def download():
+    return open('data.db', 'r')
+
 
 def generate_invoice(price):
     title = "Boost"
@@ -49,6 +59,20 @@ def generate_invoice_route(price):
     invoice_data = generate_invoice(price)
 
     return invoice_data
+
+@app.route('/auth', methods=['POST'])
+def auth_user():
+    req = request.get_json(force=True, silent=True)
+
+    user_id = req['user_id']
+    refer_id = req['refer_id']
+
+    data.Auth(user_id, refer_id)
+    
+
+# ДОДЕЛАТЬ РЕГИСТРАЦИЮ.
+
+
 
 @app.route('/payment-success', methods=['POST'])
 def payment_success():
