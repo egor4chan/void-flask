@@ -21,14 +21,6 @@ def page():
 def game():
     return render_template('index.html')
 
-@app.route('/admin')
-def admin():
-    return render_template('adminpanel.html')
-
-@app.route('/data.db')
-def download():
-    return open('data.db', 'r')
-
 
 def generate_invoice(price):
     title = "Boost"
@@ -64,12 +56,15 @@ def generate_invoice_route(price):
 def auth_user():
     req = request.get_json(force=True, silent=True)
 
-    user_id = req['user_id']
-    refer_id = req['refer_id']
+    try:
+        user_id = int(req['user_id'])
+        refer_id = int(req['refer_id'])
 
-    data.Auth(user_id, refer_id)
+        data.Auth(user_id, refer_id)
     
-    return 'True'
+        return 'True'
+    except:
+        return 'False'
 # ДОДЕЛАТЬ РЕГИСТРАЦИЮ.
 
 
@@ -89,4 +84,4 @@ def payment_success():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, host='0.0.0.0')

@@ -43,6 +43,7 @@ class Data:
 
     def PrintAllData(self):
         with self.connection.cursor() as cursor:
+            print("#" * 20)
             select_all_rows = "SELECT * FROM `data`"
             cursor.execute(select_all_rows)
 
@@ -67,3 +68,5 @@ class Data:
             rows = cursor.fetchall()
             return len(rows)
             
+data = Data()
+data.PrintAllData()
