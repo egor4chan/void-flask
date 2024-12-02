@@ -64,6 +64,10 @@ def auth_user():
     
         return 'True'
     except:
+        user_id = int(req['user_id'])
+        refer_id = 0
+
+        data.Auth(user_id, refer_id)
         return 'False'
 # ДОДЕЛАТЬ РЕГИСТРАЦИЮ.
 
